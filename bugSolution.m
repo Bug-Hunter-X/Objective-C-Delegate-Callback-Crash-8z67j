@@ -1,0 +1,1 @@
+In the corrected version (`bugSolution.m`), we use a weak reference to the delegate. This prevents a retain cycle and ensures that the application doesn't crash if the delegate is deallocated before the callback is executed.  We also add a check to ensure that `myDelegate` is not nil before calling any methods on it.
