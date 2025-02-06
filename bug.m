@@ -1,0 +1,1 @@
+This code snippet demonstrates a potential issue in Objective-C related to improper handling of delegate callbacks and memory management. Specifically, if the `myDelegate` object is deallocated before the callback is invoked, a crash may occur due to sending a message to a released object.
